@@ -19,31 +19,23 @@ Deploy the data extraction code onto **AWS Lambda Functions**, which provide a s
 Set up scheduled triggers using Amazon coludWatch to run the extraction code on a **weekly basis**.
 Store the raw data securely in **Amazon S3 bucket**, a scalable and cost-effective storage solution.
 
-<img src='Attachments\raw_data_s3.png' width=700>
-
 ## 2. Data Transformation
 
 Configure **AWS Lambda Functions** to trigger automatically upon the arrival of new data in the **Amazon S3 bucket**.
 Implement Python-based data transformation logic within AWS Lambda Functions to clean, enrich, and format the raw data.
 Store the transformed data back into a designated **Amazon S3 bucket container**, ensuring data integrity and accessibility.
 
-<img src='Attachments\transformed_data_s3.png' width =700>
-
 ## 3. Data Loading
 
 Create an snowflake pipeline to load the data when new data lands in the **Amazon S3 bucket container**.
-
-<img src='Attachments\Event_notification_snowpipe.png' width=700>
 
 ## 4. Data Reporting
 
 ingest the data from snowflake database and create spotify API dashboard using power BI.
 
 **power BI Spotify dashboard** \
-<img src='Attachments\Spotify_dashboard_page-0001.jpg' width=700>
 
 **snowflake data base** \
-<img src='Attachments\snowflae_sp_database.png' width=250>
 
 ## Key Components
 
